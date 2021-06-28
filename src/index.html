@@ -9,5 +9,70 @@
   </head>
   <body>
     <app-root></app-root>
+    <br />
+
+    <script src="https://bossanova.uk/jspreadsheet/v4/jexcel.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://bossanova.uk/jspreadsheet/v4/jexcel.css"
+      type="text/css"
+    />
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://jsuites.net/v4/jsuites.css"
+      type="text/css"
+    />
+
+    <div id="spreadsheet1"></div>
+
+    <script>
+      jspreadsheet(document.getElementById('spreadsheet1'), {
+        data: [
+          {
+            name: 'Paulo',
+            id: '3',
+            age: '40',
+            gender: 'Male'
+          },
+          {
+            name: 'Cosme Sergio',
+            id: '4',
+            age: '48',
+            gender: 'Male'
+          },
+          {
+            name: 'Jorgina Santos',
+            id: '5',
+            age: '32',
+            gender: 'Female'
+          }
+        ],
+        columns: [
+          {
+            type: 'text',
+            width: '40',
+            name: 'id',
+            title: 'Id'
+          },
+          {
+            type: 'text',
+            width: '200',
+            name: 'name',
+            title: 'Name'
+          },
+          {
+            type: 'text',
+            width: '100',
+            name: 'age',
+            title: 'Age'
+          },
+          {
+            type: 'hidden',
+            name: 'gender'
+          }
+        ]
+      });
+    </script>
   </body>
 </html>

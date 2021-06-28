@@ -13,10 +13,12 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "allowJs": true,
     "target": "es2015",
     "module": "es2020",
     "typeRoots": [
-      "node_modules/@types"
+      "node_modules/@types",
+      "turbo_modules"
     ],
     "lib": [
       "es2018",
