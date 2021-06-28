@@ -1,0 +1,39 @@
+/* Global Styles */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Text */
+h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: lighter;
+  color: white;
+  font-family: 'Roboto', Arial, sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hyperlink */
+a {
+  cursor: pointer;
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Structure DESKTOP */
+@media only screen and (min-width: 1024px) {
+  a,
+  h1 {
+    margin: 0 auto;
+    max-width: 670px;
+    width: auto;
+    display: block;
+  }
+}
