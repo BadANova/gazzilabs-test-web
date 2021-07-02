@@ -27,14 +27,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "https://bossanova.uk/jspreadsheet/v4/jexcel.css",
-              "https://jsuites.net/v4/jsuites.css"
+              "src/styles.css"
             ],
-            "scripts": [
-              "https://bossanova.uk/jspreadsheet/v4/jexcel.js",
-              "https://jsuites.net/v4/jsuites.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
